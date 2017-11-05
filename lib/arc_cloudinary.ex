@@ -8,7 +8,7 @@ defmodule Arc.Storage.Cloudinary do
     destination_dir = definition.storage_dir(version, {file, scope})
     full_path = Path.join(destination_dir, file.file_name)
 
-    [ok: uploaded_file] = Cloudex.upload(file.path, %{ public_id: file.file_name })
+    {:ok, uploaded_file} = Cloudex.upload(file.path, %{ public_id: file.file_name })
     uploaded_file
     |> IO.inspect
 
