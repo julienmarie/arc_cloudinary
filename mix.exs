@@ -29,9 +29,9 @@ defmodule Arc.Storage.Cloudinary.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:cloudex, "~> 0.1.15"},
+      {:cloudex, "~> 1.0"},
       {:poison, "~> 3.1.0", override: true},
-      {:arc, "~> 0.7.0"}
+      {:arc, "~> 0.8.0"}
     ]
   end
 end
