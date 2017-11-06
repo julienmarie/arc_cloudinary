@@ -31,7 +31,7 @@ defmodule Arc.Storage.Cloudinary.Mixfile do
     [
       {:cloudex, "~> 1.0"},
       {:poison, "~> 3.1.0", override: true},
-      {:arc, "~> 0.8.0"}
+      {:arc, "~> 0.8.0", github: "julienmarie/arc"}
     ]
   end
 end
